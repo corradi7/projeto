@@ -15,6 +15,7 @@
 <body>
     <header class="header">
         <div class="container">
+            <div class="overlay" data-overlay></div>
             <a href="index.html" class="logo">
                 <img src="assets/img/Design sem nome.png" alt="cinema">
             </a>
@@ -33,18 +34,22 @@
                     <option value="en">EN</option>
                     <option value="es">ES</option>
                 </select>
-            </div>
 
             </div>
             <button class="btn btn-primary">Entrar</button>
+            </div>
+            
+            <button class="btn-mobile" data-menu-open>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
 
-            <nav class="navbar">
+            <nav class="navbar" data-navbar>
                 <div class="navbar-top">
                     <a href="index.html">
                         <img src="assets/img/Design sem nome.png" alt="logo">
                     </a>
 
-                    <button class="menu-close">
+                    <button class="menu-close" data-menu-close>
                         <ion-icon name="close-outline"></ion-icon>
                     </button>
                 </div>
@@ -55,7 +60,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="Bombando">Home</a>
+                        <a href="#" class="navbar-link">Bombando</a>
                     </li>
 
                     <li>
@@ -64,6 +69,31 @@
 
                     <li>
                         <a href="#" class="navbar-link">Filmes</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Preços</a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-social-list">
+                    <li>
+                        <a href="#" class="navbar-social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
                     </li>
 
                 </ul>
